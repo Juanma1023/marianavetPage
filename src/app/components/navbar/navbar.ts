@@ -33,12 +33,6 @@ export class Navbar {
     route: '/sobre-nosotros'
   },
   {
-    label: 'Testimonios',
-    subLabel: 'Opiniones de clientes',
-    icon: 'star',
-    route: '/testimonios'
-  },
-  {
     label: 'Citas',
     subLabel: 'Agenda tu cita',
     icon: 'calendar_month',

@@ -4,7 +4,6 @@ import { RouterModule, Routes } from '@angular/router';
 import Home from './pages/home/home';
 import { Services } from './pages/vetservices/vetservices';
 import { About } from './pages/about/about';
-import { Testimonials } from './pages/testimonials/testimonials';
 import { Appointments } from './pages/appointments/appointments';
 import { Contact } from './pages/contact/contact';
 
@@ -23,7 +22,6 @@ type RouteConfig = {
 const pages: RouteConfig[] = [
   { path: 'home', component: Home },
   { path: 'sobre-nosotros', component: About },
-  { path: 'testimonios', component: Testimonials },
   { path: 'citas', component: Appointments },
   { path: 'contacto', component: Contact }
 ];
