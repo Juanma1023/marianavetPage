@@ -1,0 +1,16 @@
+<section class="page">
+  <h1>Nuestros Servicios</h1>
+  <section class="services-container">
+    <div class="cards">
+      @for (item of servicios; track $index) {
+        <div class="card">
+          <h3>{{ item.title }}</h3>
+          <p>{{ item.description }}</p>
+          <button [routerLink]="['/servicios', item.path]">
+            VER
+          </button>
+        </div>
+      }
+    </div>
+  </section>
+</section>

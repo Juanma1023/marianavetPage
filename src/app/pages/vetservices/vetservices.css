@@ -1,0 +1,62 @@
+.page {
+  padding: 100px 40px;
+  text-align: center;
+}
+
+.cards {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+@media (max-width: 992px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0,0,0,.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+
+.card:hover {
+  transform: translateY(-8px);
+  background: #00aeff3d;
+  box-shadow: 0 10px 25px rgba(223, 212, 212, 0.15);
+}
+
+/* Título */
+.card h3 {
+  margin-bottom: 15px;
+}
+
+.card button {
+  margin-top: 15px;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  background: #026e43;
+  color: lch(100% 0.01 296.81);
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Hover del botón */
+.card button:hover {
+  background: #06e5e5b9;
+  transform: scale(1.05);
+}
